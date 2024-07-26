@@ -1,7 +1,7 @@
 build:
   docker:
-      worker: Dockerfile
+    web: Dockerfile
+    
 run:
-   worker:   npm run science
-   
+  web: node .
    
