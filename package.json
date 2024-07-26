@@ -3,7 +3,7 @@
   "name": "science",
   "version": "5.0.0",
   "description": "science",
-  "main": ".ibrahim.js",
+  "main": "ibrahim.js",
   "type": "module",
   "engines" : { "node": "v20.15.1", "npm": "10.8.2" },
   "scripts": {
@@ -11,7 +11,7 @@
     "stop": "pm2 stop ibrahim",
     "restart": "pm2 restart ibrahim"
   },
-  "keywords": ["science", "whatsapp-bot", "gifted-tech"],
+  "keywords": ["science", "whatsapp-bot", " ibraah-tech"],
   "author": "omlugha",
   "license": "GNU",
   "dependencies": {
@@ -73,7 +73,7 @@
    },
      "directories": {
       "lib": "bdd",
-      "plugins": "bmw/cmds"
+      "plugins": "bmw"
    },
    "devDependencies": {
       "pino": "^7.0.5"
