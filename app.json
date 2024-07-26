@@ -1,9 +1,9 @@
 {
-  "name":"science",
+  "name":"BMW-MD",
   "description":"Best whatsapp bot developed by Ibrahim adams",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://telegra.ph/file/0c225f7da5616cdcbec80.jpg",
-  "repository":"https://github.com/omlugha/science",
+  "repository":"https://github.com/ibraahadam/BMW-MD",
   "succes_url":"/",
   "stack":"container",
   "env":{
@@ -55,8 +55,7 @@
 	,
     "HEROKU_API_KEY": {
     "description": "insert your heroku api-key (this is optionnal)",
-     "value":""
-    "required":true
+     "required" :false
     },
   "HEROKU_APP_NAME": {
     "description": "insert your heroku APP NAME (this is optionnal)",
