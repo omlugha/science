@@ -1,11 +1,8 @@
 {
-{
   "name": "science",
-  "version": "5.0.0",
-  "description": "science",
+  "version": "2.0.0",
+  "description": "",
   "main": "ibrahim.js",
-  "type": "module",
-  "engines" : { "node": "v20.15.1", "npm": "10.8.2" },
   "scripts": {
     "start": "pm2 start ibrahim.js --deep-monitoring --attach --name Ibrahim",
     "stop": "pm2 stop ibrahim",
