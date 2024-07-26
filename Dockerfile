@@ -1,4 +1,3 @@
-
 FROM node:lts-buster
 
 RUN apt-get update && \
@@ -7,14 +6,19 @@ RUN apt-get update && \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
+  npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
+  
+RUN git clone https://github.com/devibraah/BWM-XMD.git  /root/BmwMD
+WORKDIR /root/bmwmd/
+
 
 COPY package.json .
-
-RUN npm i && npm i -g qrcode-terminal
+RUN npm install pm2 -g
+RUN npm install --legacy-peer-deps
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "ibrahim.js"]
+CMD ["npm", "run" , "ibrahim.js"]
