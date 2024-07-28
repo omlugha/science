@@ -30,13 +30,15 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   } ;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
-  tag += `========================\n  
-        🌟 *Bmw-Md* 🌟
-========================\n
-👥 Group : ${nomGroupe} 🚀 
-👤 Autor : *${nomAuteurMessage}* 👋 
-📜 Message : *${mess}* 📝
-========================\n
+  tag +=`
+  
+╭─────────────━┈⊷ 
+│🔰 𝐁𝐌𝐖 𝐌𝐃 𝐓𝐀𝐆
+╰─────────────━┈⊷ \n
+│👥 *Group* : ${nomGroupe} 
+│👤 *Hey😀* : *${nomAuteurMessage}* 
+│📜 *Message* : *${mess}* 
+╰─────────────━┈⊷\n
 \n
 
 ` ;
@@ -72,7 +74,7 @@ zokou({ nomCom: "link", categorie: 'Group', reaction: "🙋" }, async (dest, zk,
 
   let mess = `hello ${nomAuteurMessage} , here is the group link for ${nomGroupe} \n
 
-Grp link :${lien} \n\n★𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢  𝙱𝚎𝚕𝚝𝚊𝚑-𝚃𝚎𝚌𝚑-𝚃𝚎𝚊𝚖`
+Group link :${lien} \n\n©𝐈𝐛𝐫𝐚𝐡𝐢𝐦 𝐀𝐝𝐚𝐦𝐬 𝐒𝐜𝐢𝐞𝐧𝐜𝐞`
   repondre(mess)
 
 
