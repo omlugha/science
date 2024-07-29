@@ -1,13 +1,13 @@
 {
-  "name": "bmwmd",
-  "version": "2.0.0",
-  "description": "",
+  "name": "BMW-MD",
+  "version": "10.8.1",
+  "description": "World best fast new whatsapp bot",
   "main": "ibrahim.js",
+  "type": "module",
   "scripts": {
-    "test": "node ibrahim.js",
-    "s": "node ibrahim.js",
-    "bmwmd": "pm2 start ibrahim.js --attach",
-    "bmwmd": "pm2 start ibrahim.js --attach",
+    "start": "pm2 start ibrahim.js --deep-monitoring --attach --name bmwmd",
+    "stop": "pm2 stop bmwmd",
+    "restart": "pm2 restart ",
     "c": "tsc"
   },
   "keywords": [
@@ -58,6 +58,7 @@
     "node-id3": "^0.2.6",
     "pg": "^8.11.2",
     "pino": "^8.15.0",
+    "pm2": "^5.4.0",
     "qrcode-terminal": "^0.12.0",
     "readline": "^1.3.0",
     "sequelize": "^6.32.1",
