@@ -1,7 +1,8 @@
 build:
   docker:
-      worker: Dockerfile
+    web: Dockerfile
+    
 run:
-   worker:   npm run bmwmd
+  web: node .
    
    
