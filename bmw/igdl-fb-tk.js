@@ -79,7 +79,7 @@ zokou({nomCom : "wikipidia" , categorie : "Download"},async (dest , zk , command
 
   try {
      
-    let igvid = await axios('https://es.wikipedia.org/wiki/${text)
+    let igvid = await axios('https://es.wikipedia.org/wiki/='+text)
 
     if (igvid.data.data.data[0].type == 'video') {
     zk.sendMessage(dest,{video : {url : igvid.data.data.data[0].url},caption : "ig video downloader powered by *Bmw-Md*",gifPlayback : false },{quoted : ms}) 
