@@ -56,7 +56,7 @@ zokou({nomCom : "twitter" , categorie : "Download"},async (dest , zk , commandeO
 
   try {
      
-    let igvid = await axios('https://api.maher-zubair.tech/download/spotify?url=$'+link)
+    let igvid = await axios('https://guruapi.tech/api/spotifydl?url='+link)
 
     if (igvid.data.data.data[0].type == 'video') {
     zk.sendMessage(dest,{video : {url : igvid.data.data.data[0].url},caption : "ig video downloader powered by *Bmw-Md*",gifPlayback : false },{quoted : ms}) 
@@ -70,7 +70,7 @@ zokou({nomCom : "twitter" , categorie : "Download"},async (dest , zk , commandeO
 });
 
 
-zokou({nomCom : "socialmedia" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
+zokou({nomCom : "wikipidia" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
   const {ms,repondre,arg} = commandeOptions ;
 
   let link = arg.join(' ')
@@ -79,7 +79,7 @@ zokou({nomCom : "socialmedia" , categorie : "Download"},async (dest , zk , comma
 
   try {
      
-    let igvid = await axios('https://api.maher-zubair.tech/download/alldownload2?url='+link)
+    let igvid = await axios('https://es.wikipedia.org/wiki/${text)
 
     if (igvid.data.data.data[0].type == 'video') {
     zk.sendMessage(dest,{video : {url : igvid.data.data.data[0].url},caption : "ig video downloader powered by *Bmw-Md*",gifPlayback : false },{quoted : ms}) 
